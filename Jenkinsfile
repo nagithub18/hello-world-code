@@ -21,7 +21,7 @@ node() {
   }
   stage('Deploy Code') {
     sh '''
-    sudo cp my-app-1.0-SNAPSHOT.jar /var/www/html/.
+    sudo cp target/my-app-1.0-SNAPSHOT.jar /var/www/html/.
 
     '''
   }
