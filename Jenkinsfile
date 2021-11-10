@@ -10,7 +10,7 @@ node() {
   stage('Build'){
     sh '''
     cd $WORKSPACE
-    mvn install clean compile package
+    mvn clean compile package
     '''
   }
   stage('Artifactory Archiving'){
