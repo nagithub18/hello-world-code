@@ -11,6 +11,9 @@ node() {
     sh '''
       cd $WORKSPACE
       mvn install
+      mvn clean
+      mvn compile
+      mvn package
     '''
   }
   stage('Artifactory Archiving'){
