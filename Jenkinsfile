@@ -3,9 +3,9 @@ node() {
     cleanWs()
   }
   stage('Pull Code') {
-    git branch: 'main', 
+    git branch: 'master', 
     credentialsId: 'github-nagithub18', 
-    url: 'https://github.com/nagithub18/mywebsite.git'
+    url: 'https://github.com/nagithub18/hello-world-code.git'
   }
   stage('Build'){
     sh '''
